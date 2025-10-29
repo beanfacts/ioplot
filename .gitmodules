@@ -1,0 +1,3 @@
+[submodule "ior-pydantic"]
+	path = ior-pydantic
+	url = https://github.com/beanfacts/ior-pydantic

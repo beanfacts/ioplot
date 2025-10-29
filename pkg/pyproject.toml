@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ioplot"
+version = "0.1.0"
+description = "Tools for plotting IOR test results"
+authors = [
+    { name = "Tim Dettmar", email = "hpc@timd.io" }
+]
+license = "MIT"
+dependencies = [
+    "setuptools",
+    "numpy",
+    "pandas",
+    "nicegui",
+    "plotly",
+]
+
+[project.scripts]
+ioplot = "ioplot.ui.main:main"
+
+[tool.setuptools]
+packages = ["ioplot"]
+package-dir = {"" = "src"}
